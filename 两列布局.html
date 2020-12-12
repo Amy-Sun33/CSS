@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两列布局</title>
+</head>
+
+<style>
+    .left, .right {
+        height: 200px;
+    }
+    .left {
+        float: left;
+        width: 200px;
+        background-color: #f09e5a;
+    }
+    .right {
+        width: 100%;
+        /* margin-left: 200px; */
+        /* 或者使用BFC */
+        overflow: hidden;
+        background-color: #c295cf;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
